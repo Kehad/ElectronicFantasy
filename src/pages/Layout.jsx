@@ -8,22 +8,22 @@ const Layout = ({ children }) => {
 
   const navigation = [
     { name: "Home", href: "/", icon: Home },
-    {
-      name: "Smart Power Monitor",
-      href: "/projects/smart-power-monitoring",
-      icon: Zap,
-    },
-    {
-      name: "IoT WiFi Monitor",
-      href: "/projects/iot-power-wifi-monitor",
-      icon: Wifi,
-    },
-    { name: "FM Transmitter", href: "/projects/fm-transmitter", icon: Radio },
-    {
-      name: "Signal Booster",
-      href: "/projects/cellular-signal-booster",
-      icon: Signal,
-    },
+    // {
+    //   name: "Smart Power Monitor",
+    //   href: "/projects/smart-power-monitoring",
+    //   icon: Zap,
+    // },
+    // {
+    //   name: "IoT WiFi Monitor",
+    //   href: "/projects/iot-power-wifi-monitor",
+    //   icon: Wifi,
+    // },
+    // { name: "FM Transmitter", href: "/projects/fm-transmitter", icon: Radio },
+    // {
+    //   name: "Signal Booster",
+    //   href: "/projects/cellular-signal-booster",
+    //   icon: Signal,
+    // },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
                 </div>
                 <div className="ml-3">
                   <h1 className="text-lg font-semibold text-gray-900">
-                    Engineering Showcase
+                    Electronic Fantasy
                   </h1>
                   <p className="text-xs text-gray-500">
                     Electronic & Electrical Engineering
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:block">
+            <nav className="hidden md:block mx-auto">
               <div className="flex space-x-8">
                 {navigation.map((item) => {
                   const Icon = item.icon;
